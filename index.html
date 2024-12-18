@@ -3,72 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Application Portfolio</title>
+    <title>Apex Applications</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Apex Application</h1>
             <nav>
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="Project1.html">Project 1</a></li>
-                    <li><a href="Project2.html">Project 2</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="project1.html">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about">
+    <!-- Logo and Company Name Section -->
+    <section id="logo-section">
         <div class="container">
-            <h2>About Us</h2>
-            <p>Welcome to Apex Application! Founded by passionate developers, our mission is to create innovative and impactful applications that solve real-world problems. Our team is dedicated to delivering high-quality software solutions with a focus on usability and cutting-edge technology.</p>
-            <p>Our upcoming projects include:</p>
-            <ul>
-                <li>A collaborative task management app for remote teams.</li>
-                <li>An AI-driven fitness assistant to keep you on track with your goals.</li>
-                <li>A personalized e-learning platform for skill development.</li>
-            </ul>
+            <img src="Apex logo.png" alt="Apex Applications Logo" class="logo">
+            <h1>Apex Applications</h1>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Our Projects</h2>
-            <p>We take pride in showcasing our diverse portfolio of apps that cater to a wide range of industries and needs. Below are a few highlights of what we’ve built so far:</p>
-            <div class="project">
-                <h3>Project Name</h3>
-                <p>Brief description of the project and its impact or features.</p>
-            </div>
-            <div class="project">
-                <h3>Another Project</h3>
-                <p>Details about another project. Highlight its significance.</p>
-            </div>
-            <!-- Add more project sections as needed -->
-        </div>
-    </section>
-
+    <!-- Apps Section -->
     <section id="apps">
         <div class="container">
             <h2>Our Apps</h2>
             <div class="app">
-                <h3>App Name</h3>
-                <p>Description of the app, its functionality, and its user base.</p>
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A brief description of Project 1, its features, and the problems it solves.</p>
             </div>
             <div class="app">
-                <h3>Another App</h3>
-                <p>Information about this app and its benefits.</p>
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A brief description of Project 2, its features, and the problems it solves.</p>
             </div>
-            <!-- Add more app sections as needed -->
         </div>
     </section>
 
+    <!-- Creator Section -->
+    <section id="creators">
+        <div class="container">
+            <h2>About the Creators</h2>
+            <div class="creator">
+                <img src="creator1.jpg" alt="Creator 1">
+                <p><strong>Creator 1:</strong> Bio for the first creator describing their role and contributions.</p>
+            </div>
+            <div class="creator">
+                <img src="creator2.jpg" alt="Creator 2">
+                <p><strong>Creator 2:</strong> Bio for the second creator describing their role and contributions.</p>
+            </div>
+            <div class="creator">
+                <img src="creator3.jpg" alt="Creator 3">
+                <p><strong>Creator 3:</strong> Bio for the third creator describing their role and contributions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideas Section -->
+    <section id="ideas">
+        <div class="container">
+            <h2>Share Your Ideas</h2>
+            <p>We'd love to hear your thoughts and ideas for future applications!</p>
+            <form id="idea-form">
+                <label for="idea">Your Idea:</label>
+                <textarea id="idea" name="idea" required></textarea>
+                <button type="submit">Submit Idea</button>
+            </form>
+            <div id="idea-thank-you" class="hidden">
+                <p>Thank you for your idea! We appreciate your input.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>If you have any questions or would like to collaborate with us, please reach out!</p>
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -86,12 +105,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Apex Application. All Rights Reserved.</p>
+            <p>&copy; 2024 Apex Applications. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
-
