@@ -9,45 +9,83 @@
 body {
     background: #f4f4f9;
     color: #333;
-    text-align: center; /* Center align text for all sections */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
 }
 
 /* Header */
 header {
     background: #0077b6;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: sticky; /* Makes the header stick to the top */
-    top: 0; /* Position the header at the very top */
-    z-index: 1000; /* Ensures it stays above other elements */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+
+}
+
+/* Flexbox for Header Content */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.header-logo {
+    height: 50px; /* Logo size */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Space between logo and nav */
+
+}
+nav {
+    flex-grow: 1; /* Allows nav to take up remaining space */
+    display: flex;
+    justify-content: center; /* Centers the navigation items */
+    position: absolute; /* Allows independent centering */
+    left: 50%; /* Centers nav horizontally */
+    transform: translateX(-50%); /* Adjusts for nav's width */
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    gap: 30px; /* Space between navigation items */
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em; /* Slightly larger font for better visibility */
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevents words from wrapping to the next line */
+
 }
+
+header nav ul li a:hover {
+    color: #00b4d8;
+}
+
 
 /* Logo Section */
 #logo-section {
     background: white;
-    padding: 50px 0;
+    padding: 20px 0; /* Reduced padding for less white space */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #logo-section .logo {
-    max-width: 300px; /* Increased size for better visibility */
+    max-width: 500px; /* Increased size for better visibility */
     margin: 0 auto;
+    display: block;
 }
+
 
 #logo-section h1 {
     font-size: 3rem; /* Larger font size for the company name */
@@ -108,17 +146,89 @@ form button:hover {
     background: #005f8a;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
+    /* Ensure header content takes up full width */
+
+    .header-content {
+        padding: 10px 5px;
+    }
+
+    .header-logo {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
     header nav ul {
-        flex-direction: column;
+        gap: 15px; /* Reduced space between menu items */
+    }
+
+    /* Resize the logo in the logo section to be smaller on mobile */
+    #logo-section .logo {
+        max-width: 250px; /* Half the original size */
+    }
+
+    /* Keep nav items horizontal and adjust font size */
+    header nav ul li a {
+        font-size: 1em; /* Smaller font for mobile */
+    }
+
+    /* Fix for container not filling screen */
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Adjust form inputs and buttons */
+    form input, form textarea {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    form button {
+        width: 90%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        padding: 8px 15px; /* Reduce padding for smaller screens */
+    }
+
+    .header-logo {
+        height: 40px; /* Smaller logo for mobile */
+        margin-right: 10px;
+    }
+
+    nav {
+        left: 50%;
+        transform: translateX(-50%); /* Ensure nav remains centered on smaller screens */
+    }
+
+    header nav ul {
+        gap: 15px; /* Reduce gap between nav items */
+    }
+
+    header nav ul li a {
+        font-size: 1em; /* Slightly smaller font for mobile */
+    }
+}
+@media (max-width: 480px) {
+    .header-logo {
+        height: 30px; /* Even smaller logo for very small devices */
     }
 
     #logo-section .logo {
-        max-width: 200px; /* Adjusted size for smaller screens */
+        max-width: 200px; /* Further reduce size of logo */
     }
 
-    form input, form textarea {
-        width: 90%;
+    header nav ul {
+        flex-direction: row; /* Keep items horizontal */
+        gap: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 0.9em; /* Even smaller font for very small devices */
     }
 }
