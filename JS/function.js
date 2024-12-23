@@ -1,8 +1,3 @@
-document.getElementById('hamburger-button').addEventListener('click', function() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active'); // Toggle the 'active' class
-});
-
 document.getElementById("idea-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
 
