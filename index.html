@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Applications</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="function.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="img/ApexLogoSquare.png" alt="Apex Applications Logo" class="header-logo">
+                <button class="hamburger" id="hamburger-button" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i> <!-- Font Awesome hamburger icon -->
+                </button>
+                <nav id="nav-menu" class="hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="project1.html">Project 1</a></li>
+                        <li><a href="project2.html">Project 2</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Logo and Company Name Section -->
+    <section id="logo-section">
+        <div class="container">
+            <img src="img/Apex logo.png" alt="Apex Applications Logo" class="logo">
+        </div>
+    </section>
+    
+
+ <!-- Apps Section -->
+<section id="apps">
+    <div class="container">
+        <h2>Our Apps</h2>
+        <div class="app">
+            <h3>Project 1</h3>
+            <img src="img/EBCore-logo.jpeg" alt="img">
+            <p>Our first project is creating a useful tracking and organizational for exercise applications. Our goal is to create an app that can display core exercises with a timer to keep athletes on track and focused on their fitness.</p>
+        </div>
+        <div class="app">
+            <h3>Project 2</h3>
+            <img src="img/Nitelyfe-logo.jpeg" alt="img">
+            
+            <p>So many clubs in the city, but where to go? Our second project is to develop an app that can be used as a rating and review tool to see what clubs are worth paying for.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Divider -->
+<hr>
+
+
+        
+
+    <!-- Ideas Section -->
+    <section id="ideas">
+        <div class="container">
+            <h2>Share Your Ideas</h2>
+            <p>We'd love to hear your thoughts and ideas for future applications!</p>
+            <form id="idea-form">
+                <label for="idea">Your Idea:</label>
+                <textarea id="idea" name="idea" required></textarea>
+                <button type="submit">Submit Idea</button>
+            </form>
+            <div id="idea-thank-you" class="hidden">
+                <p>Thank you for your idea! We appreciate your input.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Apex Applications. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
