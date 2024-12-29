@@ -9,21 +9,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/ApexLogoSquare.png">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
                 <img src="img/ApexLogoSquare.png" alt="Apex Applications Logo" class="header-logo">
-                <button class="hamburger" id="hamburger-button" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i> <!-- Font Awesome hamburger icon -->
-                </button>
-                <nav id="nav-menu" class="hidden">
+
+                <nav id="nav-menu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="project-1.html">Project 1</a></li>
-                        <li><a href="project-2.html">Project 2</a></li>
+                        <li><a href="project1.html">Project 1</a></li>
+                        <li><a href="project2.html">Project 2</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                
+                <nav id="dropdown-menu" class="hidden">
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="project1.html">Project 1</a></li>
+                        <li><a href="project2.html">Project 2</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,12 +60,14 @@
             <h3>Project 1</h3>
             <img src="img/EBCore-logo.jpeg" alt="img">
             <p>Our first project is creating a useful tracking and organizational for exercise applications. Our goal is to create an app that can display core exercises with a timer to keep athletes on track and focused on their fitness.</p>
+            <button>Learn More</button>
         </div>
         <div class="app">
             <h3>Project 2</h3>
             <img src="img/Nitelyfe-logo.jpeg" alt="img">
             
             <p>So many clubs in the city, but where to go? Our second project is to develop an app that can be used as a rating and review tool to see what clubs are worth paying for.</p>
+            <button>Learn More</button>
         </div>
     </div>
 </section>
@@ -100,6 +116,11 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Apex Applications. All Rights Reserved.</p>
+            <ul>
+                <li><a href="https://www.facebook.com/apexapplications">Facebook</a></li>
+                <li><a href="https://www.twitter.com/apexapplications">Twitter</a></li>
+                <li><a href="https://www.instagram.com/apexappications/">Instagram</a></li>
+            </ul>
         </div>
     </footer>
 </body>
