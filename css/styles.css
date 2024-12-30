@@ -93,6 +93,31 @@ nav ul li a:hover {
     border-radius: 3px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+/* Learn more buttons */
+.button {
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #9e1e1e;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(1);
+}
 /* Styling for the new dropdown menu */
 #dropdown-menu {
     display: none;
