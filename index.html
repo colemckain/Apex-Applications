@@ -3,122 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Applications</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="JS/function.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/ApexApplicationsSquareLogo.png">
+    <title>Apex Applications - Innovative Apps That Make Life Easier</title>
+    <meta name="description" content="Apex Applications - Creating innovative iPhone apps that make life easier and inspire others to chase their passions. From dorm room dreams to reality.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="img/ApexApplicationsSquareLogo.png" alt="Apex Applications Logo" class="header-logo">
-
-                <nav id="nav-menu">
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="Project1.html">Project 1</a></li>
-                        <li><a href="Project2.html">Project 2</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                
-                <nav id="dropdown-menu" class="hidden">
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="Project1.html">Project 1</a></li>
-                        <li><a href="Project2.html">Project 2</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Apex Applications</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#journey" class="nav-link">Our Journey</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </header>
-    
-    <!-- Logo and Company Name Section -->
-    <section id="logo-section">
-        <div class="container">
-            <img src="img/ApexApplicationsMain.png" alt="Apex Applications Logo" class="logo">
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Apex Applications
+                    <span class="highlight">Innovation Starts Here</span>
+                </h1>
+                <p class="hero-subtitle">
+                    A shared dream of creating innovative apps that make life easier and inspire others to chase their passions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#journey" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="app-icon">📱</div>
+                    <h3>Innovation</h3>
+                </div>
+                <div class="floating-card">
+                    <div class="app-icon">💡</div>
+                    <h3>Ideas</h3>
+                </div>
+                <div class="floating-card">
+                    <div class="app-icon">🚀</div>
+                    <h3>Launch</h3>
+                </div>
+            </div>
         </div>
     </section>
-    
 
- <!-- Apps Section -->
-<section id="apps">
-    <div class="container">
-        <h2>Our Apps</h2>
-        <div class="app">
-            <img src="img/EBCoreMain.png" alt="img">
-            <p>Our first project is creating a useful tracking and organizational app for exercise applications. Our goal is to create an app that can display core exercises with a timer to keep athletes on track and focused on their fitness.</p>
-            <a href="Project1.html" class="button">Learn More</a>
-        </div>
-        <div class="app">
-            <img src="img/NiteLyfeMain.png" alt="img">
-            <p>So many clubs in the city, but where to go? Our second project is to develop an app that can be used as a rating and review tool to see what clubs are worth paying for.</p>
-            <a href="Project2.html" class="button">Learn More</a>
-        </div>
-    </div>
-</section>
-
-<!-- Divider -->
-<hr>
-
-
-        
-
-    <!-- Ideas Section -->
-    <section id="ideas">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h2>Share Your Ideas</h2>
-            <p>We'd love to hear your thoughts and ideas for future applications!</p>
-            <form id="idea-form">
-                <label for="idea">Your Idea:</label>
-                <textarea id="idea" name="idea" required></textarea>
-                <button type="submit">Submit Idea</button>
-            </form>
-            <div id="idea-thank-you" class="hidden">
-                <p>Thank you for your idea! We appreciate your input.</p>
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="red-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Our story is one of big ideas, and an unshakeable belief that the next big thing can come from <em>anywhere</em>
+                    </p>
+                    <p>
+                        We're passionate about turning innovative ideas into reality. Every app we create is born from a simple question: "How can we make this better?" Whether it's streamlining daily tasks, connecting people, or solving problems we didn't know existed, we're committed to building solutions that matter.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Late Nights</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Big Ideas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Shared Dream</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/familypic.jpeg" alt="Apex Applications Team" class="team-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="journey">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Journey</h2>
+                <div class="red-line"></div>
+            </div>
+            <div class="journey-content">
+                <p class="journey-intro">
+                    Follow us as we dive into the exciting (and sometimes unpredictable) world of designing and building iPhone apps from the ground up.
+                </p>
+                <div class="journey-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Ideation</h3>
+                            <p>Every great app starts with a simple idea. We brainstorm, research, and validate concepts that could make a real difference.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Design</h3>
+                            <p>We craft beautiful, intuitive interfaces that users love. Every pixel matters in creating an exceptional experience.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Development</h3>
+                            <p>Turning designs into reality with clean, efficient code. We build for performance, reliability, and scalability.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Launch</h3>
+                            <p>From dorm room to App Store. We launch with confidence, knowing our apps are ready to make an impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Projects</h2>
+                <div class="red-line"></div>
+            </div>
+            <div class="projects-content">
+                <p class="projects-intro">
+                    Here are some of the innovative apps we've built, each designed to make life easier and inspire positive change.
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-icon">💪</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>PushLimit</h3>
+                            <p class="project-description">
+                                A mobile fitness app designed to help users track and improve their bodyweight workouts, like push-ups, sit-ups, and squats. With a clean and motivational interface, the app lets users log exercises, monitor progress, earn achievements, and view workout history.
+                            </p>
+                            <div class="app-screenshots-container">
+                                <div class="app-screenshots">
+                                    <img src="assets/PLhome.jpeg" alt="PushLimit Home Screen" class="app-screenshot">
+                                    <img src="assets/PLprogress.png" alt="PushLimit Progress Screen" class="app-screenshot">
+                                    <img src="assets/PLworkouts.jpeg" alt="PushLimit Workouts Screen" class="app-screenshot">
+                                    <img src="assets/PLworkout.jpeg" alt="PushLimit Workout Screen" class="app-screenshot">
+                                    <img src="assets/PLprofile.jpeg" alt="PushLimit Profile Screen" class="app-screenshot">
+                                </div>
+                                <div class="scroll-indicator">
+                                    <span>← Scroll to see more →</span>
+                                </div>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature-tag">Streak Tracking</span>
+                                <span class="feature-tag">Rest Timers</span>
+                                <span class="feature-tag">Goal Progress</span>
+                                <span class="feature-tag">Theme Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-icon">🗽</div>
+                            <div class="development-badge">In Development</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>We The People</h3>
+                            <p class="project-description">
+                                A user-friendly civic engagement app that brings Congress to your fingertips. It lets users track U.S. bills in real time with easy-to-understand AI summaries. Featuring swipe-through timelines, gamified learning, and a sleek design inspired by Duolingo and Robinhood.
+                            </p>
+                            <div class="project-features">
+                                <span class="feature-tag">Real-time Tracking</span>
+                                <span class="feature-tag">AI Summaries</span>
+                                <span class="feature-tag">Gamified Learning</span>
+                                <span class="feature-tag">Badge System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Journey</h2>
+                <p>
+                    Whether you're a visionary, a tech enthusiast, or just curious about the process of turning ideas into something real, we'd love to share our journey and show that with passion and determination, anyone can create something remarkable.
+                </p>
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="red-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Build Something Amazing Together</h3>
+                    <p>Have an idea? Want to collaborate? Just want to say hello? We'd love to hear from you!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <span>apexappsofficial@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">🐦</span>
+                            <span>@ApexApplic7248</span>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">📱</span>
+                            <span>Follow our journey</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Apex Applications. All Rights Reserved.</p>
-            <ul>
-                <li><a href="https://www.facebook.com/apexapplications">Facebook</a></li>
-                <li><a href="https://www.twitter.com/apexapplications">Twitter</a></li>
-                <li><a href="https://www.instagram.com/apexappications/">Instagram</a></li>
-            </ul>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Apex Applications</h3>
+                    <p>Innovation starts with a dream</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#journey">Journey</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apex Applications. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
