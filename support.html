@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Apex Applications</title>
+    <meta name="description" content="Get support for Apex Applications products including PushLimit fitness app.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="text-decoration: none; color: inherit;">Apex Applications</a></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#journey" class="nav-link">Our Journey</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="support.html" class="nav-link active">Support</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Support Hero Section -->
+    <section class="hero support-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Support Center
+                    <span class="highlight">We're Here to Help</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Find answers, get help, and learn more about our apps. We're committed to providing the best experience for our users.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PushLimit Support Section -->
+    <section id="pushlimit-support" class="support-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>PushLimit Support</h2>
+                <div class="red-line"></div>
+            </div>
+            
+            <div class="support-content">
+                <!-- App Overview -->
+                <div class="app-overview">
+                    <div class="app-header">
+                        <div class="app-icon-large">💪</div>
+                        <div class="app-info">
+                            <h3>PushLimit</h3>
+                            <p class="app-tagline">Track your bodyweight fitness journey with motivation and precision</p>
+                        </div>
+                    </div>
+                    
+                    <div class="app-screenshots-container">
+                        <div class="app-screenshots">
+                            <img src="assets/PLhome.jpeg" alt="PushLimit Home Screen" class="app-screenshot">
+                            <img src="assets/PLprogress.png" alt="PushLimit Progress Screen" class="app-screenshot">
+                            <img src="assets/PLworkouts.jpeg" alt="PushLimit Workouts Screen" class="app-screenshot">
+                            <img src="assets/PLworkout.jpeg" alt="PushLimit Workout Screen" class="app-screenshot">
+                            <img src="assets/PLprofile.jpeg" alt="PushLimit Profile Screen" class="app-screenshot">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="features-section">
+                    <h3>Key Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">🔥</div>
+                            <h4>Streak Tracking</h4>
+                            <p>Build momentum with daily workout streaks and watch your consistency grow</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⏱️</div>
+                            <h4>Rest Timers</h4>
+                            <p>Optimize your workouts with built-in rest timers for maximum efficiency</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📈</div>
+                            <h4>Goal Progress</h4>
+                            <p>Set personal goals and track your progress with detailed analytics</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎨</div>
+                            <h4>Theme Support</h4>
+                            <p>Customize your experience with multiple theme options</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>How do I start tracking my workouts?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Open PushLimit and tap the "+" button on the home screen. Choose from push-ups, sit-ups, squats, or create your own custom exercise. Enter the number of reps you completed and the app will automatically save your workout. You can also add notes about how the workout felt or any modifications you made.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>How does streak tracking work?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Your streak counts consecutive days where you complete at least one workout. Each day you work out, your streak increases. If you miss a day, your streak resets to zero. You can view your current streak, longest streak ever, and total workout days in your profile. The app will celebrate milestone streaks like 7 days, 30 days, and 100 days with special notifications!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>Can I set custom goals?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! Go to Settings > Goals to set daily, weekly, or monthly targets for any exercise. For example, you could set a goal of 50 push-ups per day or 300 squats per week. The app will track your progress and show you how close you are to reaching each goal. You can adjust goals anytime, and the app will celebrate when you hit your targets with achievement notifications.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>How do I use the rest timer?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The rest timer automatically starts after you complete a set to help you maintain proper rest intervals. You can customize the rest duration in Settings > Timer (default is 60 seconds). The timer will count down and notify you when it's time for your next set. If you're ready to continue sooner, just tap "Skip" to start your next set immediately. This helps prevent overtraining and ensures you're getting adequate recovery between sets.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>How do I view my progress over time?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Tap the Progress tab to see detailed charts and statistics. You can view your performance by day, week, month, or year. The charts show your total reps, average reps per workout, and personal records. You can also see which exercises you do most often and track improvements in your strength and endurance over time. The progress view helps you stay motivated by showing how far you've come!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <h4>Is my data backed up?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! Your workout data is automatically backed up to iCloud whenever you're connected to the internet. This means you won't lose your progress if you reinstall the app, get a new device, or accidentally delete the app. Make sure you're signed into iCloud on your device for automatic backups. You can also manually backup your data in Settings > Data Management > Backup Now if needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Support -->
+                <div class="contact-support">
+                    <h3>Still Need Help?</h3>
+                    <p>Can't find what you're looking for? We're here to help!</p>
+                    <div class="support-contact-methods">
+                        <div class="support-contact-method">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email Support</h4>
+                                <p>apexappsofficial@gmail.com</p>
+                                <small>We typically respond within 24 hours</small>
+                            </div>
+                        </div>
+                        <div class="support-contact-method">
+                            <span class="contact-icon">🐦</span>
+                            <div>
+                                <h4>Twitter</h4>
+                                <p>@ApexApplic7248</p>
+                                <small>Follow us for updates and quick questions</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Apex Applications</h3>
+                    <p>Innovation starts with a dream</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#journey">Journey</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="support.html">Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apex Applications. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
