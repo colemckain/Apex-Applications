@@ -376,6 +376,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 100);
     
+    // Simple FAQ toggle function
+    window.toggleFAQ = function(element) {
+        const faqItem = element.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+        const toggle = element.querySelector('.faq-toggle');
+        
+        // Close all other FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item !== faqItem) {
+                item.classList.remove('active');
+                const otherToggle = item.querySelector('.faq-toggle');
+                if (otherToggle) otherToggle.textContent = '+';
+            }
+        });
+        
+        // Toggle current item
+        if (faqItem.classList.contains('active')) {
+            faqItem.classList.remove('active');
+            if (toggle) toggle.textContent = '+';
+        } else {
+            faqItem.classList.add('active');
+            if (toggle) toggle.textContent = '−';
+        }
+    };
+    
     // Add loading animation
     const loader = document.createElement('div');
     loader.className = 'page-loader';
