@@ -401,6 +401,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     
+    // Projects scroll function
+    window.scrollProjects = function(direction) {
+        const projectsGrid = document.querySelector('.projects-grid');
+        if (projectsGrid) {
+            const scrollAmount = 320; // Width of one project card + gap
+            if (direction === 'left') {
+                projectsGrid.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                projectsGrid.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    };
+    
     // Add loading animation
     const loader = document.createElement('div');
     loader.className = 'page-loader';
